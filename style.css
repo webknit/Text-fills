@@ -12,9 +12,36 @@ section {
 }
 
 .text-box {
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+.text-box--one {
 	/* using CSS gradients with the -webkit- prefix in order to remove the background in non-Webkit browsers */
 	background-image: -webkit-linear-gradient(transparent, transparent), url(img.jpg);
-	font-size: 3em;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.text-box--two {
+	background-image: -webkit-linear-gradient(green 50%, red 50%);
+	background-repeat: repeat;
+	background-position: 0 0;
+	background-size: 100% 10px;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-animation: stripes 2s linear infinite;
+	animation: stripes 2s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+	100% {
+		background-position: 0 -10px;
+	}
+}
+
+@keyframes stripes {
+	100% {
+		background-position: 0 -10px;
+	}
 }
