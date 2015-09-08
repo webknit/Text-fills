@@ -1,0 +1,20 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}caption,th{text-align:left;}q:before,q:after{content:'';}abbr,acronym{border:0;}
+
+.main-body {
+	font-family: "Arial Black","Arial Bold",Gadget,sans-serif;
+	margin: 2em auto 0;
+	max-width: 700px;
+}
+
+section {
+	border-bottom: 1px solid #333;
+	padding: 5em 0;
+}
+
+.text-box {
+	/* using CSS gradients with the -webkit- prefix in order to remove the background in non-Webkit browsers */
+	background-image: -webkit-linear-gradient(transparent, transparent), url(img.jpg);
+	font-size: 3em;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
