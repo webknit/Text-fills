@@ -9,6 +9,19 @@
 </head>
 
 <body> 
+
+	<svg>
+
+		<defs>
+
+			<linearGradient id="gr-simple" x1="0" y1="0" x2="100%" y2="100%">
+				<stop stop-color="hsl(50, 100%, 70%)" offset="10%"/>
+				<stop stop-color="hsl(320, 100%, 50%)" offset="90%"/>
+			</linearGradient>
+
+		</defs>
+
+	</svg>
 	
 	<div class="main-body">
 
@@ -18,13 +31,53 @@
 
 		<section>
 
+			<h2>background-clip: text</h2>
+
 			<div class="text-box text-box--one">This is a text fill</div>
 
 		</section>
 
 		<section>
 
+			<h2>Gradient and animating background position</h2>
+
 			<div class="text-box text-box--two">Stripes</div>
+
+		</section>
+
+		<section>
+
+			<h2>SVG Fill</h2>
+
+			<!--  viewBox === x y width height -->
+
+			<svg viewBox="0 0 70 20">
+			  <text text-anchor="middle"
+			          x="50%"
+			          y="50%"
+			          dy=".35em"
+			          >
+			      Text
+			    </text>
+			</svg>
+
+		</section>
+
+		<section>
+
+			<h2>SVG Fill gradient</h2>
+
+			<svg viewBox="0 0 70 20">
+
+			  <text text-anchor="middle"
+			          x="50%"
+			          y="50%"
+			          dy=".35em"
+			          fill="url(#gr-simple)"
+			          >
+			      Text
+			    </text>
+			</svg>
 
 		</section>
 
